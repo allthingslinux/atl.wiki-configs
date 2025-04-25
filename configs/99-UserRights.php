@@ -2,6 +2,9 @@
 // For UserRights: https://www.mediawiki.org/wiki/Manual:User_rights
 // bureaucrat, checkuser, supress, push-subscription-manager, autoconfirmed are useless
 
+# Debugging
+// $wgGroupPermissions['*']['read'] = true;
+
 // * ~ Everyone 
 $wgGroupPermissions['*']['createaccount'] = true; 
 $wgGroupPermissions['*']['edit'] = false;
@@ -14,31 +17,18 @@ $wgGroupPermissions['user']['move-subpages'] = false;
 $wgGroupPermissions['user']['move-categorypages'] = false;
 $wgGroupPermissions['user']['move-rootuserpages'] = false;     
 $wgGroupPermissions['user']['movefile'] = false;
-
-// automoderated ~ Trusted Users (Allows bypassing edit moderation)   
-$wgGroupPermissions['automoderated']['move'] = true;
-$wgGroupPermissions['automoderated']['move-subpages'] = true;
-$wgGroupPermissions['automoderated']['move-categorypages'] = true;
-$wgGroupPermissions['automoderated']['move-rootuserpages'] = true;
-$wgGroupPermissions['automoderated']['autoconfirmed'] = true;
-$wgGroupPermissions['automoderated']['editsemiprotected'] = true;
-$wgGroupPermissions['automoderated']['movefile'] = true;
-$wgGroupPermissions['automoderated']['skip-moderation'] = true;
-$wgGroupPermissions['automoderated']['skip-move-moderation'] = false;
+$wgGroupPermissions['user']['viewapprover'] = true;
 
 // moderator ~ Wiki Only Moderators (not used yet)
 $wgGroupPermissions['moderator']['move'] = true;
 $wgGroupPermissions['moderator']['move-subpages'] = true;
 $wgGroupPermissions['moderator']['move-categorypages'] = true;
 $wgGroupPermissions['moderator']['move-rootuserpages'] = true;
-$wgGroupPermissions['moderator']['autoconfirmed'] = true;
 $wgGroupPermissions['moderator']['editsemiprotected'] = true;
 $wgGroupPermissions['moderator']['movefile'] = true;
-$wgGroupPermissions['moderator']['moderation'] = true;
 $wgGroupPermissions['moderator']['block'] = true;
 $wgGroupPermissions['moderator']['rollback'] = true;
-$wgGroupPermissions['moderator']['skip-moderation'] = true;
-$wgGroupPermissions['moderator']['skip-move-moderation'] = true;
+$wgGroupPermissions['moderator']['approverevisions'] = true;
 
 // autoconfirmed ~ Useless autogiven role rn
 $wgAutoConfirmAge = 604800;
@@ -47,22 +37,14 @@ $wgGroupPermissions['autoconfirmed']['autoconfirmed'] = false;
 $wgGroupPermissions['autoconfirmed']['editsemiprotected'] = false;
 
 // staff ~ For all ATL Staff
-$wgGroupPermissions['staff']['skip-moderation'] = true;
-$wgGroupPermissions['staff']['skip-move-moderation'] = true;
-$wgGroupPermissions['staff']['moderation'] = true;
 $wgGroupPermissions['staff']['block'] = true;
 $wgGroupPermissions['staff']['rollback'] = true;
-$wgGroupPermissions['staff']['deleterevision'] = true;
 $wgGroupPermissions['staff']['move'] = true;
 $wgGroupPermissions['staff']['move-subpages'] = true;
 $wgGroupPermissions['staff']['move-categorypages'] = true;
 $wgGroupPermissions['staff']['move-rootuserpages'] = true;  
-$wgGroupPermissions['staff']['autoconfirmed'] = true;
 $wgGroupPermissions['staff']['editsemiprotected'] = true;
-$wgGroupPermissions['staff']['delete'] = true;
-$wgGroupPermissions['staff']['deleterevision'] = true;
-$wgAddGroups['staff'] = [ 'automoderated', 'moderator' ];  
-$wgRemoveGroups['staff'] = [ 'automoderated', 'moderator' ];  
+$wgGroupPermissions['staff']['approverevisions'] = true;
 
 // interface-admin ~ Grants interface edit permissions including templates
 $wgGroupPermissions['interface-admin']['template-editing'] = true;
@@ -72,7 +54,6 @@ $wgGroupPermissions['interface-admin']['module-editing'] = true;
 $wgGroupPermissions['sysop']['checkuser'] = true;
 $wgGroupPermissions['sysop']['checkuser-log'] = true;
 $wgGroupPermissions['sysop']['investigate'] = true;
-$wgGroupPermissions['sysop']['checkuser-temporary-account'] = true;
 $wgGroupPermissions['sysop']['userrights'] = true;
 $wgGroupPermissions['sysop']['renameuser'] = true;
 $wgGroupPermissions['sysop']['userrights-interwiki'] = true;
@@ -93,4 +74,11 @@ $wgGroupPermissions['sysop']['suppressionlog'] = true;
 $wgGroupPermissions['sysop']['viewsuppressed'] = true;
 $wgGroupPermissions['sysop']['suppressrevision'] = true;
 $wgGroupPermissions['sysop']['usermerge'] = true;
+$wgGroupPermissions['sysop']['mwoauthproposeconsumer'] = true;
+$wgGroupPermissions['sysop']['mwoauthupdateownconsumer'] = true;
+$wgGroupPermissions['sysop']['mwoauthmanageconsumer'] = true;
+$wgGroupPermissions['sysop']['mwoauthsuppress'] = true;
+$wgGroupPermissions['sysop']['mwoauthviewsuppressed'] = true;
+$wgGroupPermissions['sysop']['mwoauthviewprivate'] = true;
+$wgGroupPermissions['sysop']['mwoauthmanagemygrants'] = true;
 $wgGroupPermissions['sysop']['import'] = false;

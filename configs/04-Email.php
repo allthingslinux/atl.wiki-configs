@@ -17,4 +17,4 @@ $wgPasswordSender = "services@allthingslinux.org";
 $wgEmailAuthentication = true;
 
 // https://www.mediawiki.org/wiki/Manual:$wgEmailConfirmToEdit
-$wgEmailConfirmToEdit = true;
+$wgEmailConfirmToEdit = false;

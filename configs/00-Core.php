@@ -37,20 +37,39 @@ $wgCdnServersNoPurge = ["2400:cb00::/32", "2606:4700::/32", "2803:f800::/32", "2
 // https://www.mediawiki.org/wiki/Manual:$wgForceHTTPS
 $wgForceHTTPS = true;
 
-$wgScriptPath = "";
-$wgArticlePath = "/$1";
+// $wgScript = "/"; // do not set
+$wgScriptPath = ""; // root
+$wgScriptExtension = ".php";
+$wgArticlePath = "/$1"; // pretty url
 
 // https://www.mediawiki.org/wiki/Manual:$wgUsePathInfo
-$wgUsePathInfo = true;
+$wgUsePathInfo = ( strpos( PHP_SAPI, 'cgi' ) === false ) &&
+	( strpos( PHP_SAPI, 'apache2filter' ) === false ) &&
+	( strpos( PHP_SAPI, 'isapi' ) === false );
 
-// https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:$wgMainPageIsDomainRoot
+// https://www.mediawiki.org/wiki/Manual:$wgMainPageIsDomainRoot
 $wgMainPageIsDomainRoot = true;
 
-// https://www.mediawiki.org/wiki/Manual:$wgActionPaths
-$actions = array( 'view', 'edit', 'watch', 'unwatch', 'delete','revert', 'rollback', 'protect', 'unprotect', 'render', 'submit', 'history', 'purge', 'info' );
+$actions = [
+	'view',
+	'edit',
+	'watch',
+	'unwatch',
+	'delete',
+	'revert',
+	'rollback',
+	'protect',
+	'unprotect',
+	'markpatrolled',
+	'render',
+	'submit',
+	'history',
+	'purge',
+	'info',
+];
 
 foreach ( $actions as $action ) {
-    $wgActionPaths[$action] = "/$action/$1";
+  $wgActionPaths[$action] = "/$action/$1";
 }
 
 #################################################################### DB Config
@@ -103,3 +122,4 @@ $wgUseNPPatrol = false;
 
 // https://www.mediawiki.org/wiki/Manual:$wgUseFilePatrol
 $wgUseFilePatrol = false;
+

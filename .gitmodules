@@ -146,3 +146,11 @@
 [submodule "extensions/TopLink"]
 	path = extensions/TopLink
 	url = https://github.com/mywikis/TopLink
+[submodule "extensions/ApprovedRevs"]
+	path = extensions/ApprovedRevs
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ApprovedRevs
+	branch = REL1_43
+[submodule "extensions/OAuth"]
+	path = extensions/OAuth
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAuth
+	branch = REL1_43

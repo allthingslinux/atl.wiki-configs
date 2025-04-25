@@ -1,7 +1,7 @@
 <?php
 // For extensions configs
 
-#################################################################### core Extensions
+#################################################################### Core Extensions
 
 // https://www.mediawiki.org/wiki/Extension:AbuseFilter
 #wfLoadExtension('AbuseFilter');
@@ -83,7 +83,7 @@ $wgUserrightsInterwikiDelimiter = '#';
 
 wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/Turnstile' ]);
 
-#################################################################### other lol
+#################################################################### Other Submodule Extensions
 
 // https://www.mediawiki.org/wiki/Manual:$wgExtensionDirectory
 $wgExtensionDirectory = '/etc/mediawiki/extensions';
@@ -116,6 +116,20 @@ wfLoadExtension( 'UserMerge' );
 wfLoadExtension( 'TopLink' ); 
  // https://www.mediawiki.org/wiki/Extension:ConsoleOutput
 wfLoadExtension( 'ConsoleOutput' );
+
+###################################################################
+// https://www.mediawiki.org/wiki/Extension:Approved_Revs
+
+wfLoadExtension('ApprovedRevs');
+$egApprovedRevsAutomaticApprovals = true;
+$egApprovedRevsShowNotApprovedMessage = true;
+$egApprovedRevsEnabledNamespaces[NS_GUIDES] = true; 
+$egApprovedRevsEnabledNamespaces[NS_MAIN] = false; 
+$egApprovedRevsEnabledNamespaces[NS_USER] = false; 
+$egApprovedRevsEnabledNamespaces[NS_FILE] = false; 
+$egApprovedRevsEnabledNamespaces[NS_TEMPLATE] = false; 
+$egApprovedRevsEnabledNamespaces[NS_HELP] = false; 
+$egApprovedRevsEnabledNamespaces[NS_PROJECT] = false;
 
 #################################################################### Discord Webhook
 // https://www.mediawiki.org/wiki/Extension:Discord
@@ -178,6 +192,11 @@ $wgContribScoreReports = [
     [ 0, 50 ]
 ];
 
+####################################################################
+// https://www.mediawiki.org/wiki/Extension:OAuth
+
+wfLoadExtension( 'OAuth' );
+
 #################################################################### Tarballed Extensions
 
 $wgExtensionDirectory = '/etc/mediawiki/tarballExtensions';
@@ -186,13 +205,6 @@ $wgExtensionDirectory = '/etc/mediawiki/tarballExtensions';
 wfLoadExtension( 'TemplateStylesExtender' );
 // https://www.mediawiki.org/wiki/Extension:TemplateStyles
 wfLoadExtension( 'TemplateStyles' );
-
-#################################################################### Moderation: Must be the last extension called
-// https://www.mediawiki.org/wiki/Extension:Moderation
-$wgExtensionDirectory = '/etc/mediawiki/extensions';
-
-wfLoadExtension( 'Moderation' );
-$wgModerationOnlyInNamespaces = [3000];
 
 // Switched back to core directory as it breaks echo otherwise
 $wgExtensionDirectory = '/var/www/mediawiki/extensions';
