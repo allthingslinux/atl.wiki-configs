@@ -140,9 +140,6 @@
 [submodule "extensions/Discord"]
 	path = extensions/Discord
 	url = https://github.com/jayktaylor/mw-discord
-[submodule "extensions/Moderation"]
-	path = extensions/Moderation
-	url = https://github.com/edwardspec/mediawiki-moderation
 [submodule "extensions/TopLink"]
 	path = extensions/TopLink
 	url = https://github.com/mywikis/TopLink
