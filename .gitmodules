@@ -2,10 +2,6 @@
 	path = AntiSpoof
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AntiSpoof
 	branch = REL1_43
-[submodule "AutoCreateCategoryPages"]
-	path = AutoCreateCategoryPages
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AutoCreateCategoryPages
-	branch = REL1_43
 [submodule "BulkBlock"]
 	path = BulkBlock
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BulkBlock
@@ -74,66 +70,14 @@
 	path = CheckUser
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
 	branch = REL1_43
-[submodule "skins/Citizen"]
-	path = skins/Citizen
-	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
-[submodule "extensions/AntiSpoof"]
-	path = extensions/AntiSpoof
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AntiSpoof
-[submodule "extensions/AutoCreateCategoryPages"]
-	path = extensions/AutoCreateCategoryPages
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AutoCreateCategoryPages
-[submodule "extensions/BulkBlock"]
-	path = extensions/BulkBlock
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BulkBlock
-[submodule "extensions/Capiunto"]
-	path = extensions/Capiunto
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Capiunto
-[submodule "extensions/CheckUser"]
-	path = extensions/CheckUser
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
-[submodule "extensions/CodeMirror"]
-	path = extensions/CodeMirror
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror
-[submodule "extensions/ContributionScores"]
-	path = extensions/ContributionScores
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionScores
-[submodule "extensions/Description2"]
-	path = extensions/Description2
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Description2
-[submodule "extensions/Drafts"]
-	path = extensions/Drafts
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Drafts
-[submodule "extensions/Editcount"]
-	path = extensions/Editcount
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Editcount
-[submodule "extensions/Favorites"]
-	path = extensions/Favorites
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Favorites
-[submodule "extensions/FilterSpecialPages"]
-	path = extensions/FilterSpecialPages
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FilterSpecialPages
-[submodule "extensions/LastModified"]
-	path = extensions/LastModified
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LastModified
-[submodule "extensions/OpenIDConnect"]
-	path = extensions/OpenIDConnect
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenIDConnect
-[submodule "extensions/PluggableAuth"]
-	path = extensions/PluggableAuth
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PluggableAuth
-[submodule "extensions/SiteMetrics"]
-	path = extensions/SiteMetrics
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SiteMetrics
-[submodule "extensions/TemplateSandbox"]
-	path = extensions/TemplateSandbox
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateSandbox
-[submodule "extensions/UserMerge"]
-	path = extensions/UserMerge
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UserMerge
-[submodule "extensions/WebAuthn"]
-	path = extensions/WebAuthn
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WebAuthn
+[submodule "extensions/ApprovedRevs"]
+	path = extensions/ApprovedRevs
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ApprovedRevs
+	branch = REL1_43
+[submodule "extensions/OAuth"]
+	path = extensions/OAuth
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAuth
+	branch = REL1_43
 [submodule "extensions/ConsoleOutput"]
 	path = extensions/ConsoleOutput
 	url = https://github.com/BreezyOps/MediaWiki-ConsoleOutput
@@ -143,11 +87,6 @@
 [submodule "extensions/TopLink"]
 	path = extensions/TopLink
 	url = https://github.com/mywikis/TopLink
-[submodule "extensions/ApprovedRevs"]
-	path = extensions/ApprovedRevs
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ApprovedRevs
-	branch = REL1_43
-[submodule "extensions/OAuth"]
-	path = extensions/OAuth
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAuth
-	branch = REL1_43
+[submodule "skins/Citizen"]
+	path = skins/Citizen
+	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git

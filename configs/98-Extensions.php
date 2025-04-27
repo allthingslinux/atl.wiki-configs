@@ -106,8 +106,6 @@ wfLoadExtension( 'FilterSpecialPages' );
 wfLoadExtension( 'LastModified' );  
 // https://www.mediawiki.org/wiki/Extension:SiteMetrics
 wfLoadExtension( 'SiteMetrics' );  
-// https://www.mediawiki.org/wiki/Extension:Auto_Create_Category_Pages  
-wfLoadExtension( 'AutoCreateCategoryPages' );  
 // https://www.mediawiki.org/wiki/Extension:TemplateSandbox  
 wfLoadExtension( 'TemplateSandbox' );  
 // https://www.mediawiki.org/wiki/Extension:UserMerge
@@ -176,21 +174,21 @@ wfLoadExtension( 'Drafts' );
 $egDraftsAutoSaveInputBased = true;
 $egDraftsAutoSaveWait = 15;
 
-####################################################################
+#################################################################### DISABLED
 // https://www.mediawiki.org/wiki/Extension:Contribution_Scores
 
-wfLoadExtension( 'ContributionScores' );
-$wgContribScoreIgnoreBots = true; 
-$wgContribScoreIgnoreBlockedUsers = true;
-$wgContribScoreIgnoreUsernames = [];
-$wgContribScoresUseRealName = true;
-$wgContribScoreDisableCache = false;
-$wgContribScoreUseRoughEditCount = false;   
-$wgContribScoreReports = [
-    [ 7, 50 ],
-    [ 30, 50 ],
-    [ 0, 50 ]
-];
+#wfLoadExtension( 'ContributionScores' );
+#$wgContribScoreIgnoreBots = true; 
+#$wgContribScoreIgnoreBlockedUsers = true;
+#$wgContribScoreIgnoreUsernames = [];
+#$wgContribScoresUseRealName = true;
+#$wgContribScoreDisableCache = false;
+#$wgContribScoreUseRoughEditCount = false;   
+#$wgContribScoreReports = [
+#    [ 7, 50 ],
+#    [ 30, 50 ],
+#    [ 0, 50 ]
+#];
 
 ####################################################################
 // https://www.mediawiki.org/wiki/Extension:OAuth
