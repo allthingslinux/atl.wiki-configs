@@ -112,8 +112,10 @@ wfLoadExtension( 'TemplateSandbox' );
 wfLoadExtension( 'UserMerge' );
 // https://www.mediawiki.org/wiki/Extension:TopLink
 wfLoadExtension( 'TopLink' ); 
- // https://www.mediawiki.org/wiki/Extension:ConsoleOutput
+// https://www.mediawiki.org/wiki/Extension:ConsoleOutput
 wfLoadExtension( 'ConsoleOutput' );
+// https://www.mediawiki.org/wiki/Extension:DynamicPageList3
+wfLoadExtension( 'DynamicPageList3' );
 
 ###################################################################
 // https://www.mediawiki.org/wiki/Extension:Approved_Revs
@@ -134,6 +136,9 @@ $egApprovedRevsEnabledNamespaces[NS_PROJECT] = false;
 
 wfLoadExtension( 'Discord' );
 $wgDiscordUseEmojis = true;
+$wgDiscordDisabledHooks = [
+    'ApprovedRevsRevisionApproved', 'ApprovedRevsRevisionUnapproved', 'ApprovedRevsFileRevisionApproved', 'ApprovedRevsFileRevisionUnapproved',
+];
 $wgDiscordWebhookURL = [ "https://discord.com/api/webhooks/1247597825848508538/f3fWL0pIsyvF2XdNcACdDIKsKQZgHpdbFwO5AgyR6D15Glw98TTZYKniRAcBoDLSe2zQ" ];
 
 #################################################################### IP Checkuser

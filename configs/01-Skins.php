@@ -22,6 +22,3 @@ $wgDefaultSkin = "Citizen";
 
 // https://www.mediawiki.org/wiki/Manual:$wgEdititis
 $wgEdititis = true;
-
-// https://www.mediawiki.org/wiki/Manual:$wgNativeImageLazyLoading
-$wgNativeImageLazyLoading = true;

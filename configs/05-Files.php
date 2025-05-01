@@ -38,3 +38,7 @@ $wgSVGConverter = 'rsvg';
 
 // https://www.mediawiki.org/wiki/Manual:$wgMaxShellMemory
 $wgMaxShellMemory = 524288;
+
+// https://www.mediawiki.org/wiki/Manual:$wgNativeImageLazyLoading
+// Previously set to true, I feel that setting to false improves user experience as images are already cached and forcing lazy load server side creates a feeling of lag. - kaizen
+$wgNativeImageLazyLoading = false;
