@@ -125,3 +125,5 @@ $wgUseNPPatrol = false;
 // https://www.mediawiki.org/wiki/Manual:$wgUseFilePatrol
 $wgUseFilePatrol = false;
 
+// https://www.mediawiki.org/wiki/Manual:$wgEnableCanonicalServerLink
+$wgEnableCanonicalServerLink = true;
