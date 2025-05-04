@@ -137,7 +137,15 @@ $egApprovedRevsEnabledNamespaces[NS_PROJECT] = false;
 wfLoadExtension( 'Discord' );
 $wgDiscordUseEmojis = true;
 $wgDiscordDisabledHooks = [
-    'ApprovedRevsRevisionApproved', 'ApprovedRevsRevisionUnapproved', 'ApprovedRevsFileRevisionApproved', 'ApprovedRevsFileRevisionUnapproved',
+    'ApprovedRevsRevisionApproved', 
+    'ApprovedRevsRevisionUnapproved', 
+    'ApprovedRevsFileRevisionApproved', 
+    'ApprovedRevsFileRevisionUnapproved', 
+    'BlockIpComplete', 
+    'UnblockUserComplete', 
+    'FileDeleteComplete', 
+    'FileUndeleteComplete',
+    'ArticleRevisionVisibilitySet',
 ];
 $wgDiscordWebhookURL = [ "https://discord.com/api/webhooks/1247597825848508538/f3fWL0pIsyvF2XdNcACdDIKsKQZgHpdbFwO5AgyR6D15Glw98TTZYKniRAcBoDLSe2zQ" ];
 
