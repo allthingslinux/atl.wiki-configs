@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# /etc/mediawiki
-sudo setfacl -R -m g:atl-sysadmins:rwx /etc/mediawiki
-sudo setfacl -R -d -m g:atl-sysadmins:rwx /etc/mediawiki
+# /var/www
+sudo setfacl -R -m g:atl-sysadmins:rwx /var/www/atlwiki
+sudo setfacl -R -d -m g:atl-sysadmins:rwx /var/www/atlwiki
 
-# /etc/mediawiki/secrets
-sudo setfacl -b /etc/mediawiki/secrets
-sudo setfacl -k /etc/mediawiki/secrets
+# /var/www/atlwiki/images && /var/www/atlwiki/cache
+sudo setfacl -bR /var/www/atlwiki/images
+sudo setfacl -bR /var/www/atlwiki/cache

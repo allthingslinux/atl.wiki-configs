@@ -4,6 +4,15 @@
 // https://www.mediawiki.org/wiki/Manual:$wgEnableUploads
 $wgEnableUploads = true;
 
+// https://www.mediawiki.org/wiki/Manual:$wgUploadDirectory
+$wgUploadDirectory = '/var/www/atlwiki/images';
+
+// https://www.mediawiki.org/wiki/Manual:$wgUploadPath
+$wgUploadPath = "/images";
+
+// https://www.mediawiki.org/wiki/Manual:$wgTmpDirectory
+$wgTmpDirectory = '/var/www/atlwiki/images/tmp';
+
 // https://www.mediawiki.org/wiki/Manual:$wgUseImageMagick
 $wgUseImageMagick = true;
 
@@ -40,5 +49,4 @@ $wgSVGConverter = 'rsvg';
 $wgMaxShellMemory = 524288;
 
 // https://www.mediawiki.org/wiki/Manual:$wgNativeImageLazyLoading
-// Previously set to true, I feel that setting to false improves user experience as images are already cached and forcing lazy load server side creates a feeling of lag. - kaizen
 $wgNativeImageLazyLoading = false;

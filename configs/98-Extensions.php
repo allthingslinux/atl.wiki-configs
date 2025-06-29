@@ -55,12 +55,21 @@ wfLoadExtension('SpamBlacklist');
 wfLoadExtension('SyntaxHighlight_GeSHi');
 // https://www.mediawiki.org/wiki/Extension:TemplateData
 wfLoadExtension('TemplateData');
-// https://www.mediawiki.org/wiki/Extension:TextExtracts
-wfLoadExtension('TextExtracts');
 // https://www.mediawiki.org/wiki/Extension:Thanks
 wfLoadExtension('Thanks');
 // https://www.mediawiki.org/wiki/Extension:WikiEditor
 wfLoadExtension('WikiEditor');
+
+#################################################################### TextExtracts
+// https://www.mediawiki.org/wiki/Extension:TextExtracts
+
+wfLoadExtension('TextExtracts');
+$wgExtractsRemoveClasses = [
+    'ul.gallery',
+    'gallery',
+    'code',
+    '.metadata'
+];
 
 #################################################################### VisualEditor
 // https://www.mediawiki.org/wiki/Extension:VisualEditor
@@ -86,7 +95,7 @@ wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/Turnstile' ]);
 #################################################################### Other Submodule Extensions
 
 // https://www.mediawiki.org/wiki/Manual:$wgExtensionDirectory
-$wgExtensionDirectory = '/etc/mediawiki/extensions';
+$wgExtensionDirectory = '/var/www/atlwiki/extensions';
 
 // https://www.mediawiki.org/wiki/Extension:WebAuthn  
 wfLoadExtension( 'WebAuthn' );  
@@ -116,6 +125,8 @@ wfLoadExtension( 'TopLink' );
 wfLoadExtension( 'ConsoleOutput' );
 // https://www.mediawiki.org/wiki/Extension:DynamicPageList3
 wfLoadExtension( 'DynamicPageList3' );
+// https://www.mediawiki.org/wiki/Extension:ShortDescription
+wfLoadExtension( 'ShortDescription' );
 
 ###################################################################
 // https://www.mediawiki.org/wiki/Extension:Approved_Revs
@@ -171,8 +182,8 @@ $wgPluggableAuth_EnableLocalProperties = true;
 ####################################################################
 // https://www.mediawiki.org/wiki/Extension:Description2
 
-wfLoadExtension( 'Description2' );
-$wgEnableMetaDescriptionFunctions = true;
+#wfLoadExtension( 'Description2' );
+#$wgEnableMetaDescriptionFunctions = true;
 
 ####################################################################
 // https://www.mediawiki.org/wiki/Extension:CodeMirror
@@ -210,7 +221,7 @@ wfLoadExtension( 'OAuth' );
 
 #################################################################### Tarballed Extensions
 
-$wgExtensionDirectory = '/etc/mediawiki/tarballExtensions';
+$wgExtensionDirectory = '/var/www/atlwiki/tarballExtensions';
 
 // https://www.mediawiki.org/wiki/Extension:TemplateStylesExtender
 wfLoadExtension( 'TemplateStylesExtender' );
@@ -218,4 +229,4 @@ wfLoadExtension( 'TemplateStylesExtender' );
 wfLoadExtension( 'TemplateStyles' );
 
 // Switched back to core directory as it breaks echo otherwise
-$wgExtensionDirectory = '/var/www/mediawiki/extensions';
+$wgExtensionDirectory = '/var/www/atlwiki/mediawiki/extensions';

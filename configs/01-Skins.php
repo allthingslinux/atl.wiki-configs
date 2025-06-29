@@ -11,11 +11,12 @@ wfLoadSkin( 'Timeless' );
 wfLoadSkin( 'Vector' );
 
 // https://www.mediawiki.org/wiki/Manual:$wgStyleDirectory
-$wgStyleDirectory = '/etc/mediawiki/skins';
+$wgStyleDirectory = '/var/www/atlwiki/skins';
 
 wfLoadSkin( 'Citizen' );
 $wgCitizenEnablePreferences = true;
-$wgCitizenSearchDescriptionSource = 'pagedescription';
+#$wgCitizenEnableCommandPalette = true;
+$wgCitizenSearchDescriptionSource = "wikidata";
 
 // https://www.mediawiki.org/wiki/Manual:$wgDefaultSkin
 $wgDefaultSkin = "Citizen";
