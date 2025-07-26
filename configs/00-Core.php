@@ -23,7 +23,7 @@ $wgDebugLogFile = "/var/log/mediawiki/debug-{$wgDBname}.log";
 $wgSitename = "atl.wiki";
 
 // https://www.mediawiki.org/wiki/Manual:$wgMetaNamespace
-$wgMetaNamespace = "Atl.wiki";
+$wgMetaNamespace = "ATL";
 
 // https://www.mediawiki.org/wiki/Manual:$wgServer
 $wgServer = "https://atl.wiki";

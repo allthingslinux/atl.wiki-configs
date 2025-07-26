@@ -23,3 +23,6 @@ $wgDefaultSkin = "Citizen";
 
 // https://www.mediawiki.org/wiki/Manual:$wgEdititis
 $wgEdititis = true;
+
+// https://www.mediawiki.org/wiki/Manual:$wgAllowUserCss
+$wgAllowUserCss = true;

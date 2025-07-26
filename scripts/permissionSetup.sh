@@ -15,3 +15,5 @@ sudo chmod -R 770 /var/www/atlwiki/cache
 # /var/www/mediawiki/sitemap & /var/www/mediawiki/sitemap.xml
 sudo chmod -R 755 /var/www/atlwiki/sitemap
 sudo chmod 755 /var/www/atlwiki/sitemap.xml
+
+/var/www/atlwiki/scripts/aclSetup.sh

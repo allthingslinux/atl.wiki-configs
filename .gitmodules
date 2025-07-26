@@ -78,10 +78,6 @@
 	path = extensions/OAuth
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAuth
 	branch = REL1_43
-[submodule "extensions/DynamicPageList3"]
-	path = extensions/DynamicPageList3
-	url = https://github.com/Universal-Omega/DynamicPageList3
-	branch = REL1_43
 [submodule "extensions/ConsoleOutput"]
 	path = extensions/ConsoleOutput
 	url = https://github.com/BreezyOps/MediaWiki-ConsoleOutput

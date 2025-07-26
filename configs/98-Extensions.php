@@ -123,8 +123,6 @@ wfLoadExtension( 'UserMerge' );
 wfLoadExtension( 'TopLink' ); 
 // https://www.mediawiki.org/wiki/Extension:ConsoleOutput
 wfLoadExtension( 'ConsoleOutput' );
-// https://www.mediawiki.org/wiki/Extension:DynamicPageList3
-wfLoadExtension( 'DynamicPageList3' );
 // https://www.mediawiki.org/wiki/Extension:ShortDescription
 wfLoadExtension( 'ShortDescription' );
 
