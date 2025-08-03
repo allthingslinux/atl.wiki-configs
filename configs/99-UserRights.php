@@ -1,6 +1,6 @@
 <?php
 // For UserRights: https://www.mediawiki.org/wiki/Manual:User_rights
-// bureaucrat, checkuser, supress, push-subscription-manager, autoconfirmed are useless
+// bureaucrat, checkuser, supress & push-subscription-manager
 
 # Debugging
 // $wgGroupPermissions['*']['read'] = true;
@@ -30,7 +30,7 @@ $wgGroupPermissions['moderator']['block'] = true;
 $wgGroupPermissions['moderator']['rollback'] = true;
 $wgGroupPermissions['moderator']['approverevisions'] = true;
 
-// autoconfirmed ~ Useless autogiven role rn
+// autoconfirmed ~ Given for wiki author role sync on discord
 $wgAutoConfirmAge = 604800;
 $wgAutoConfirmCount = 10;
 $wgGroupPermissions['autoconfirmed']['autoconfirmed'] = false;
@@ -45,6 +45,9 @@ $wgGroupPermissions['staff']['move-categorypages'] = true;
 $wgGroupPermissions['staff']['move-rootuserpages'] = true;  
 $wgGroupPermissions['staff']['editsemiprotected'] = true;
 $wgGroupPermissions['staff']['approverevisions'] = true;
+
+// template-editor ~ Grants edit permissions for templates
+$wgGroupPermissions['template-editor']['template-editing'] = true;
 
 // interface-admin ~ Grants interface edit permissions including templates
 $wgGroupPermissions['interface-admin']['template-editing'] = true;
