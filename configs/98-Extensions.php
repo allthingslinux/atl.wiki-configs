@@ -113,6 +113,8 @@ wfLoadExtension( 'Editcount' );
 wfLoadExtension( 'FilterSpecialPages' );  
 // https://www.mediawiki.org/wiki/Extension:LastModified  
 wfLoadExtension( 'LastModified' );  
+// https://www.mediawiki.org/wiki/Extension:OpenGraphMeta
+wfLoadExtension( 'OpenGraphMeta' );
 // https://www.mediawiki.org/wiki/Extension:SiteMetrics
 wfLoadExtension( 'SiteMetrics' );  
 // https://www.mediawiki.org/wiki/Extension:TemplateSandbox  
@@ -177,11 +179,11 @@ $wgOpenIDConnect_MigrateUsersByEmail = true;
 $wgOpenIDConnect_UseRealNameAsUserName = true;
 $wgPluggableAuth_EnableLocalProperties = true;
 
-####################################################################
+#################################################################### DISABLED
 // https://www.mediawiki.org/wiki/Extension:Description2
 
-#wfLoadExtension( 'Description2' );
-#$wgEnableMetaDescriptionFunctions = true;
+wfLoadExtension( 'Description2' );
+$wgEnableMetaDescriptionFunctions = true;
 
 ####################################################################
 // https://www.mediawiki.org/wiki/Extension:CodeMirror

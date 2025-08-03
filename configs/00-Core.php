@@ -27,6 +27,7 @@ $wgMetaNamespace = "ATL";
 
 // https://www.mediawiki.org/wiki/Manual:$wgServer
 $wgServer = "https://atl.wiki";
+#$wgServer = "http://atl.wiki"
 
 // https://www.mediawiki.org/wiki/Manual:$wgMainPageIsDomainRoot
 $wgMainPageIsDomainRoot = true;
@@ -127,3 +128,12 @@ $wgUseFilePatrol = false;
 
 // https://www.mediawiki.org/wiki/Manual:$wgEnableCanonicalServerLink
 $wgEnableCanonicalServerLink = true;
+
+// https://www.mediawiki.org/wiki/Manual:$wgEnableEditRecovery
+$wgEnableEditRecovery = true;
+
+// https://www.mediawiki.org/wiki/Manual:$wgEditRecoveryExpiry
+$wgEditRecoveryExpiry = 604800; # 7 Days
+
+// https://www.mediawiki.org/wiki/Manual:$wgRestrictDisplayTitle
+$wgRestrictDisplayTitle = false;

@@ -15,7 +15,6 @@ $wgStyleDirectory = '/var/www/atlwiki/skins';
 
 wfLoadSkin( 'Citizen' );
 $wgCitizenEnablePreferences = true;
-#$wgCitizenEnableCommandPalette = true;
 $wgCitizenSearchDescriptionSource = "wikidata";
 
 // https://www.mediawiki.org/wiki/Manual:$wgDefaultSkin

@@ -90,3 +90,7 @@
 [submodule "skins/Citizen"]
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
+[submodule "extensions/OpenGraphMeta"]
+	path = extensions/OpenGraphMeta
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenGraphMeta
+	branch = REL1_43
