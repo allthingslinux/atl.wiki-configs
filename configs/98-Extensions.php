@@ -79,6 +79,28 @@ $wgVisualEditorAvailableNamespaces = [
     'Guides' => true,
     'Project' => true
 ];
+$wgVisualEditorEnableDiffPageBetaFeature = true;
+$wgVisualEditorUseSingleEditTab = true;
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgDefaultUserOptions['visualeditor-editor'] = "visualeditor";
+$wgHooks['SkinTemplateNavigation::Universal'][] = function ( $skin, &$links ) {
+    foreach ( $links as &$group ) {
+        foreach ( $group as &$tab ) {
+            if ( isset( $tab['href'] ) ) {
+                $tab['href'] = preg_replace_callback(
+                    '#/index\.php\?title=([^&]+)(&(.*))?#',
+                    function ( $matches ) {
+                        $title = $matches[1];
+                        $query = isset($matches[3]) ? '?' . $matches[3] : '';
+                        return '/' . $title . $query;
+                    },
+                    $tab['href']
+                );
+            }
+        }
+    }
+    return true;
+};
 
 #################################################################### Interwiki
 // https://www.mediawiki.org/wiki/Extension:Interwiki
