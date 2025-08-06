@@ -27,7 +27,6 @@ $wgMetaNamespace = "ATL";
 
 // https://www.mediawiki.org/wiki/Manual:$wgServer
 $wgServer = "https://atl.wiki";
-#$wgServer = "http://atl.wiki"
 
 // https://www.mediawiki.org/wiki/Manual:$wgMainPageIsDomainRoot
 $wgMainPageIsDomainRoot = true;
@@ -38,17 +37,17 @@ $wgUseCdn = true;
 // https://www.mediawiki.org/wiki/Manual:$wgCdnServersNoPurge
 $wgCdnServersNoPurge = ["2400:cb00::/32", "2606:4700::/32", "2803:f800::/32", "2405:b500::/32", "2405:8100::/32", "2a06:98c0::/29", "2c0f:f248::/32", "173.245.48.0/20", "103.21.244.0/22", "103.22.200.0/22", "103.31.4.0/22", "141.101.64.0/18", "108.162.192.0/18", "190.93.240.0/20", "188.114.96.0/20", "197.234.240.0/22", "198.41.128.0/17", "162.158.0.0/15", "104.16.0.0/13", "104.24.0.0/14", "172.64.0.0/13", "131.0.72.0/22"];
 
-// https://www.mediawiki.org/wiki/Manual:$wgScript
-$wgScript = "/mediawiki/index.php";
-
-// https://www.mediawiki.org/wiki/Manual:$wgScriptPath
-$wgScriptPath = "/mediawiki"; # index.php is at root
-
-// https://www.mediawiki.org/wiki/Manual:$wgScriptPath
-$wgArticlePath = "/$1"; # Pretty URL
-
 // https://www.mediawiki.org/wiki/Manual:$wgUsePathInfo
-$wgUsePathInfo = ( strpos( PHP_SAPI, 'cgi' ) === false ) && ( strpos( PHP_SAPI, 'apache2filter' ) === false ) && ( strpos( PHP_SAPI, 'isapi' ) === false );
+$wgUsePathInfo = true;
+
+// https://www.mediawiki.org/wiki/Manual:$wgScript
+$wgScript = "/index.php";
+
+// https://www.mediawiki.org/wiki/Manual:$wgScriptPath
+$wgScriptPath = "";
+
+// https://www.mediawiki.org/wiki/Manual:$wgArticlePath
+$wgArticlePath = "/$1"; # Pretty URL
 
 // https://www.mediawiki.org/wiki/Manual:$wgActionPaths
 $actions = [
