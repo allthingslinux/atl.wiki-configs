@@ -136,3 +136,6 @@ $wgEditRecoveryExpiry = 604800; # 7 Days
 
 // https://www.mediawiki.org/wiki/Manual:$wgRestrictDisplayTitle
 $wgRestrictDisplayTitle = false;
+
+// https://www.mediawiki.org/wiki/Manual:$wgUsePrivateIPs
+$wgUsePrivateIPs = true;
