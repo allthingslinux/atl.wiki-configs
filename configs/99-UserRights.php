@@ -31,7 +31,7 @@ $wgGroupPermissions['moderator']['rollback'] = true;
 $wgGroupPermissions['moderator']['approverevisions'] = true;
 
 // autoconfirmed ~ Given for wiki author role sync on discord
-$wgAutoConfirmAge = 604800;
+$wgAutoConfirmAge = 259200;
 $wgAutoConfirmCount = 10;
 $wgGroupPermissions['autoconfirmed']['autoconfirmed'] = false;
 $wgGroupPermissions['autoconfirmed']['editsemiprotected'] = false;
@@ -46,10 +46,11 @@ $wgGroupPermissions['staff']['move-rootuserpages'] = true;
 $wgGroupPermissions['staff']['editsemiprotected'] = true;
 $wgGroupPermissions['staff']['approverevisions'] = true;
 
-// template-editor ~ Grants edit permissions for templates
+// template-editor ~ Grants edit permissions for templates and modules
 $wgGroupPermissions['template-editor']['template-editing'] = true;
+$wgGroupPermissions['interface-admin']['module-editing'] = true;
 
-// interface-admin ~ Grants interface edit permissions including templates
+// interface-admin ~ Grants interface edit permissions including templates and modules
 $wgGroupPermissions['interface-admin']['template-editing'] = true;
 $wgGroupPermissions['interface-admin']['module-editing'] = true;
 
