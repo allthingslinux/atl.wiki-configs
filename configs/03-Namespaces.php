@@ -8,7 +8,7 @@ $wgAvailableRights[] = 'meta-editing';
 
 $wgNamespaceProtection[10] = ['template-editing']; // Template:
 $wgNamespaceProtection[828] = ['module-editing']; // Module:
-$wgNamespaceProtection[4] = ['meta-editing']; // Atl.wiki:
+$wgNamespaceProtection[4] = ['meta-editing']; // ATL:
 
 define("NS_GUIDES", 3000); 
 define("NS_GUIDES_TALK", 3001);
