@@ -180,7 +180,6 @@ $wgDiscordDisabledHooks = [
     'FileUndeleteComplete',
     'ArticleRevisionVisibilitySet',
 ];
-$wgDiscordWebhookURL = [ "https://discord.com/api/webhooks/1247597825848508538/f3fWL0pIsyvF2XdNcACdDIKsKQZgHpdbFwO5AgyR6D15Glw98TTZYKniRAcBoDLSe2zQ" ];
 
 #################################################################### IP Checkuser
 // https://www.mediawiki.org/wiki/Extension:CheckUser
